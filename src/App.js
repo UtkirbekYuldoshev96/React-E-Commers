@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Cards from "./Components/Cards/Cards";
+import Headers from "./Components/Header/Headers";
+import Drawer from "./Components/Drawer/Drawer";
 
+const arr = [
+    {name: "Algebra 6", price: 12999},
+    {name: "Algebra 6", price: 12999},
+    {name: "Algebra 6", price: 12999},
+    {name: "Algebra 6", price: 12999},
+    {name: "Algebra 6", price: 12999},
+];
+
+const App = () => {
+    return (
+        <div className='wrapper clear'>
+            <Drawer/>
+            <Headers/>
+            <div className="content p-15">
+                <div className='d-flex align-center justify-between mb-40'>
+                    <h2 className='mb-40'>Barcha kitoblar</h2>
+                    <div className="search-block d-flex align-center">
+                        <i className="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder='Qidiruv'/>
+                    </div>
+                </div>
+                <div className="d-flex">
+                    {arr.map((obj) =>(
+                        <Cards/>
+                    ) )}
+                </div>
+            </div>
+        </div>
+    );
+};
 export default App;
