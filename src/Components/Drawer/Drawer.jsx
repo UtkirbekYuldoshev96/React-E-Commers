@@ -1,20 +1,20 @@
 import React from 'react';
-import Algebra6 from "../../assent/algebra-6.jpg";
+import Algebra6 from "../../assets/ikkiEshik.jpg";
 
-const Drawer = () => {
+const Drawer = (props) => {
     return (
         <>
-            <div style={{display: 'none'}} className="overline">
+            <div className="overline">
                 <div className="drawer">
                     <h3 className='mb-25 d-flex justify-between mb-20'>Savat
-                        <button className='cardItemBtn'>
+                        <button onClick={props.onClose} className='cardItemBtn'>
                             <i className="fa-solid fa-x"></i>
                         </button>
                     </h3>
                     <div className="items">
                         <div className="cardItem d-flex align-center mb-20">
                             <div className="cardItemImag">
-                                <img className='mr-30' width={70} height={70} src={Algebra6} alt="ikki-eshik"/>
+                                <img className='mr-30' width={70} height={70} src={Algebra6} alt=""/>
                             </div>
                             <div className='mr-20 mb-25'>
                                 <p className='mb-5'>Algebra 6</p>

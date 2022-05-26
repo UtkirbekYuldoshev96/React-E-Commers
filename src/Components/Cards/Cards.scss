@@ -1,0 +1,43 @@
+.card{
+  border: 1px solid #F8F8F8;
+  padding: 25px;
+  margin: 0 20px 0 30px;
+  max-width: 300px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.1s ease-in-out, transform 0.2s ease-in-out;
+  &:hover{
+    box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+    transform: translateY(-10px);
+  }
+  .foverit{
+    position: relative;
+    cursor: pointer;
+    i{
+      position: absolute;
+      top: -17px;
+      left: -17px;
+      font-size: 20px;
+    }
+  }
+  span{
+    font-size: 14px;
+    opacity: .5;
+    text-transform: uppercase;
+  }
+  b{
+    font-size: 15px;
+  }
+  h5{
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+  .button{
+    width: 32px;
+    height: 32px;
+    border-radius: .5rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    background: #ffffff;
+  }
+}
