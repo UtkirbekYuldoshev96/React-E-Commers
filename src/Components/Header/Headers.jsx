@@ -9,7 +9,7 @@ const Headers = (props) => {
                     <div className="d-flex align-center">
                         <h1><img src={Logo} width={120} height={120} alt="books"/></h1>
                         <div>
-                            <h3>NAJOT TA'LIM</h3>
+                            <h3>NAJOT ILM</h3>
                             <p className='opacity-5' style={{marginTop: "-15px"}}>Eng yaxshi kitoblarni xarid qiling</p>
                         </div>
                     </div>
